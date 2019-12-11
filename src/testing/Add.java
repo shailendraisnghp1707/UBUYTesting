@@ -11,6 +11,8 @@ public class Add {
 		int c = a+b;
 		
 		System.out.println("Sum is "+c);
+		
+		System.out.println("Done");
 				
 	}
 
