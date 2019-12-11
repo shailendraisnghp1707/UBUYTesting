@@ -55,6 +55,7 @@ public class CompleteOrder extends Locaters{
 			System.out.println(url);
 			webDriver.get(url);
 			//logger.info(url);
+			System.out.println("For Delete");
 			
 			
 			
