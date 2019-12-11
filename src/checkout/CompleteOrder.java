@@ -57,6 +57,8 @@ public class CompleteOrder extends Locaters{
 			//logger.info(url);
 			System.out.println("For Delete");
 			
+			System.out.println("ok");
+			
 			
 			
 			
