@@ -194,6 +194,46 @@ public class CompleteOrder extends Locaters{
 			
 			
 			try {
+				if(webDriver.findElement(By.xpath("//input[@id='billing:address_appartment']")).isEnabled())
+				{
+					webDriver.findElement(By.xpath("//input[@id='billing:address_appartment']")).sendKeys("Qatar AppartMent");
+					
+				}
+				
+			} catch (Exception e) {
+				
+				
+			}
+			
+			try {
+				if(webDriver.findElement(By.xpath("//input[@id='billing:address_avenue']")).isEnabled())
+				{
+					webDriver.findElement(By.xpath("//input[@id='billing:address_avenue']")).sendKeys("Qatar Avenue");
+					
+				}
+				
+			} catch (Exception e) {
+				
+				
+			}
+			
+			//Jordan
+			
+			try {
+				if(webDriver.findElement(By.xpath("//input[@id='billing:idnumber']")).isEnabled())
+				{
+					webDriver.findElement(By.xpath("//input[@id='billing:idnumber']")).sendKeys("12569857");
+					
+				}
+				
+			} catch (Exception e) {
+				
+				
+			}
+			
+			
+			
+			try {
 				if(webDriver.findElement(By.xpath(Zip)).isEnabled())
 				{
 					webDriver.findElement(By.xpath(Zip)).sendKeys("5454545454");
