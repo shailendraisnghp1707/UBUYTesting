@@ -58,7 +58,7 @@ public class CompleteOrder extends Locaters{
 			
 			
 			WebElement element5 = (new WebDriverWait(webDriver, 20)).until(ExpectedConditions.elementToBeClickable(By.xpath(search)));
-			  element5.sendKeys("iphone");
+			  element5.sendKeys("laptop");
 			 System.out.println("Search Products LAPTOP");
 		webDriver.findElement(By.xpath(clickonSaerchButton)).click();
 			
@@ -68,6 +68,10 @@ public class CompleteOrder extends Locaters{
 			webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			webDriver.findElement(By.xpath(SelectProducts)).click();
 			System.out.println("Select products");
+			
+			
+			String st =webDriver.getCurrentUrl();
+			System.out.println(st);
 			
 		Thread.sleep(2000);
 			//webDriver.navigate().refresh();
@@ -260,6 +264,7 @@ public class CompleteOrder extends Locaters{
 				System.out.println("here 2");
 				TakesScreenshot screenshot=(TakesScreenshot)webDriver;
 				System.out.println("here 3");
+				@SuppressWarnings("unused")
 				File src=screenshot.getScreenshotAs(OutputType.FILE);
 				
 				
