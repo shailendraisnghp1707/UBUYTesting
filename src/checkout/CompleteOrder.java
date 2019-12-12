@@ -55,12 +55,6 @@ public class CompleteOrder extends Locaters{
 			System.out.println(url);
 			webDriver.get(url);
 			//logger.info(url);
-			System.out.println("For Delete");
-			
-			System.out.println("ok");
-			
-			
-			
 			
 			
 			WebElement element5 = (new WebDriverWait(webDriver, 20)).until(ExpectedConditions.elementToBeClickable(By.xpath(search)));
