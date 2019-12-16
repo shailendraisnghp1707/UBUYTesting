@@ -43,7 +43,7 @@ public class CompleteOrder extends Locaters{
 			op.addArguments("headless");
 			webDriver = new ChromeDriver(op);
 
-			FileInputStream file = new FileInputStream(new File("D:\\UBUY_WorkSpace\\UBUY Checkout\\ReadExcel\\ReadURL.xlsx"));
+			FileInputStream file = new FileInputStream(new File("D:\\UBUY_WorkSpace\\UBUY_Checkout\\ReadExcel\\ReadURL.xlsx"));
 			@SuppressWarnings("resource")
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
@@ -71,7 +71,7 @@ public class CompleteOrder extends Locaters{
 			
 			
 			String st =webDriver.getCurrentUrl();
-			System.out.println(st);
+			System.out.println(i+" "+st);
 			
 		Thread.sleep(2000);
 			//webDriver.navigate().refresh();
